@@ -36,11 +36,22 @@
   "id": 10,
   "name": "Nicolas ROBLES",
   "dob": "2003-07-23",
-  "nationality": "France",
+  "nationality": "French",
   "avatar": "/photos/10.png",
   "codingStrengths": "React, Node.js , php , Kubernetes , Docker , Flask",
   "codingWeaknesses": "CSS , TypeScript",
   "biggestAchievement": "Created a mobile app called HealthyCore, focused on fitness and nutrition.",
   "funFact": "Practice scuba diving and have earned several diving certifications."
+},
+{
+  "id": 20,
+  "name": "Stéphane THIRY",
+  "dob": "1998-04-08",
+  "nationality": "French",
+  "avatar": "/photos/20.png",
+  "codingStrengths": "Python object / PyQt, Dev mobile, Agile",
+  "codingWeaknesses": "JS, Web development",
+  "biggestAchievement": "Made a desktop application with python and PyQt6",
+  "funFact": "i'm fun"
 }
 ]
