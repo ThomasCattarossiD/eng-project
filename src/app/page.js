@@ -21,7 +21,7 @@ export default function Home() {
               </Link>
               <Card.Body className="text-center">
                 <Card.Title className="fw-semibold">{student.name}</Card.Title>
-                <Card.Text className="text-secondary fs-small">{student.specialty}</Card.Text>
+                <Card.Text className="text-secondary fs-small">{student.codingStrengths}</Card.Text>
                 <Button variant="outline-primary" size="sm" href={`/students/${student.id}`}>
                   View Profile
                 </Button>

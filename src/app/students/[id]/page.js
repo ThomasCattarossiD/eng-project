@@ -1,9 +1,21 @@
 'use client';
 
-import { Container, Row, Col, Image, Badge, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Image, Button, Card, ListGroup } from 'react-bootstrap';
 import students from '../../../../data/students.json';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
+
+// Helper function to calculate age
+function calculateAge(dob) {
+  const birthDate = new Date(dob);
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDifference = today.getMonth() - birthDate.getMonth();
+  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+}
 
 export default function StudentProfile() {
   const { id } = useParams();
@@ -21,38 +33,42 @@ export default function StudentProfile() {
     );
   }
 
+  const age = calculateAge(student.dob);
+
   return (
     <Container className="py-5">
-      <Row className="g-5">
+      <Row className="g-4">
         <Col md={4} className="text-center">
           <Image src={student.avatar} roundedCircle fluid className="shadow-sm mb-3" />
           <h2 className="fw-bold">{student.name}</h2>
-          <p className="text-muted">{student.specialty}</p>
-          <div className="d-grid gap-2">
-            {student.linkedin && <Button variant="outline-primary" href={student.linkedin} target="_blank">LinkedIn</Button>}
-            {student.github && <Button variant="outline-secondary" href={student.github} target="_blank">GitHub</Button>}
-          </div>
+          <p className="text-muted">{age} years old</p>
+          <p className="text-muted">{student.nationality}</p>
         </Col>
         <Col md={8}>
-          <Card className="shadow-sm">
-            <Card.Body>
-              <Card.Title as="h3">About</Card.Title>
-              <Card.Text>
-                {student.bio}
-              </Card.Text>
-            </Card.Body>
+          <Card className="shadow-sm mb-4">
+            <Card.Header as="h3">Coding Profile</Card.Header>
+            <ListGroup variant="flush">
+              <ListGroup.Item>
+                <h6 className="fw-bold">Strengths:</h6>
+                <p>{student.codingStrengths}</p>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <h6 className="fw-bold">Weaknesses:</h6>
+                <p>{student.codingWeaknesses}</p>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <h6 className="fw-bold">Biggest Achievement:</h6>
+                <p>{student.biggestAchievement}</p>
+              </ListGroup.Item>
+            </ListGroup>
           </Card>
 
-          <Card className="mt-4 shadow-sm">
+          <Card className="shadow-sm">
+            <Card.Header as="h3">Fun Fact</Card.Header>
             <Card.Body>
-              <Card.Title as="h3">Skills</Card.Title>
-              <div>
-                {student.skills.map((skill, index) => (
-                  <Badge pill bg="primary" className="me-2 mb-2 p-2 fw-normal" key={index}>
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
+              <Card.Text>
+                {student.funFact}
+              </Card.Text>
             </Card.Body>
           </Card>
         </Col>

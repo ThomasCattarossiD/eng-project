@@ -2,41 +2,45 @@
   {
     "id": 1,
     "name": "Alice Dupont",
-    "specialty": "Web Development & AI",
+    "dob": "1999-08-15",
+    "nationality": "French",
     "avatar": "https://placehold.co/400x400/EFEFEF/333?text=AD",
-    "bio": "Passionate about artificial intelligence and web development, Alice seeks to create innovative and intuitive applications. She has solid experience in React and Python.",
-    "skills": ["React", "Next.js", "Python", "Machine Learning", "Node.js"],
-    "linkedin": "https://www.linkedin.com/in/alice-dupont",
-    "github": "https://github.com/alice-dupont"
+    "codingStrengths": "Frontend architecture, UI animations",
+    "codingWeaknesses": "Database optimization",
+    "biggestAchievement": "Led the development of a real-time collaborative editor that is now used by 10,000+ users.",
+    "funFact": "Can solve a Rubik's Cube in under a minute."
   },
   {
     "id": 2,
     "name": "Bob Martin",
-    "specialty": "Cybersecurity & Networks",
+    "dob": "1998-05-20",
+    "nationality": "American",
     "avatar": "https://placehold.co/400x400/EFEFEF/333?text=BM",
-    "bio": "An expert in information systems security, Bob specializes in data protection and threat analysis. He enjoys designing robust and secure network architectures.",
-    "skills": ["Pentesting", "Firewall", "VPN", "Bash Scripting", "Python"],
-    "linkedin": "https://www.linkedin.com/in/bob-martin",
-    "github": "https://github.com/bob-martin"
+    "codingStrengths": "Network security, Penetration testing",
+    "codingWeaknesses": "Frontend design",
+    "biggestAchievement": "Discovered and reported a critical vulnerability in a major open-source library.",
+    "funFact": "Is a certified scuba diver and has explored shipwrecks."
   },
   {
     "id": 3,
     "name": "Carla Rodriguez",
-    "specialty": "Mobile Development",
+    "dob": "2000-11-02",
+    "nationality": "Spanish",
     "avatar": "https://placehold.co/400x400/EFEFEF/333?text=CR",
-    "bio": "A creative mobile developer, Carla masters Swift and Kotlin to build fluid user experiences on iOS and Android. She is particularly interested in UX/UI design.",
-    "skills": ["Swift (iOS)", "Kotlin (Android)", "Flutter", "UI/UX Design", "Firebase"],
-    "linkedin": "https://www.linkedin.com/in/carla-rodriguez",
-    "github": "https://github.com/carla-rodriguez"
+    "codingStrengths": "Native mobile UI/UX, Performance tuning",
+    "codingWeaknesses": "Backend API design",
+    "biggestAchievement": "Built a mobile app that reached #1 in its category on the App Store for a week.",
+    "funFact": "Has a collection of over 50 vintage board games."
   },
   {
     "id": 4,
     "name": "David Petit",
-    "specialty": "Data Science & Big Data",
+    "dob": "1999-01-30",
+    "nationality": "Canadian",
     "avatar": "https://placehold.co/400x400/EFEFEF/333?text=DP",
-    "bio": "David transforms raw data into valuable insights. With expertise in R, Python, and Big Data technologies like Spark, he enjoys solving complex problems through data.",
-    "skills": ["Python", "R", "SQL", "Apache Spark", "Tableau"],
-    "linkedin": "https://www.linkedin.com/in/david-petit",
-    "github": "https://github.com/david-petit"
+    "codingStrengths": "Data modeling, Predictive analytics",
+    "codingWeaknesses": "CSS and styling",
+    "biggestAchievement": "Developed a machine learning model that improved sales forecasts by 25%.",
+    "funFact": "Plays the violin in a local orchestra."
   }
 ]
