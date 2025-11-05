@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
 
         <footer className="bg-light py-3 mt-auto">
           <Container className="text-center text-muted">
-            &copy; {new Date().getFullYear()} Computer Science Masters
+            &copy; {new Date().getFullYear()} Thomas CATTAROSSI DARTIGUELONGUE
           </Container>
         </footer>
       </body>

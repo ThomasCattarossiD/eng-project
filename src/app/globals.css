@@ -49,3 +49,7 @@ a {
 .profile-avatar:hover {
   transform: scale(1.05);
 }
+
+.header-subtitle {
+  color: white;
+}

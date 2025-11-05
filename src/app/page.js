@@ -9,7 +9,7 @@ export default function Home() {
     <Container className="py-5">
       <header className="text-center mb-5">
         <h1 className="fw-bold">Our Class</h1>
-        <p className="text-muted">Computer Science Masters - 2025</p>
+        <p className="header-subtitle">Computer Science Masters - 2025</p>
       </header>
 
       <Row xs={1} md={2} lg={3} xl={4} className="g-4">
