@@ -1,0 +1,43 @@
+
+[
+  {
+    "id": 1,
+    "name": "Alice Dupont",
+    "specialty": "Développement Web & IA",
+    "avatar": "https://placehold.co/400x400/EFEFEF/333?text=AD",
+    "bio": "Passionnée par l'intelligence artificielle et le développement web, Alice cherche à créer des applications innovantes et intuitives. Elle a une solide expérience en React et en Python.",
+    "skills": ["React", "Next.js", "Python", "Machine Learning", "Node.js"],
+    "linkedin": "https://www.linkedin.com/in/alice-dupont",
+    "github": "https://github.com/alice-dupont"
+  },
+  {
+    "id": 2,
+    "name": "Bob Martin",
+    "specialty": "Cybersécurité & Réseaux",
+    "avatar": "https://placehold.co/400x400/EFEFEF/333?text=BM",
+    "bio": "Expert en sécurité des systèmes d'information, Bob est spécialisé dans la protection des données et l'analyse des menaces. Il aime concevoir des architectures réseau robustes et sécurisées.",
+    "skills": ["Pentesting", "Firewall", "VPN", "Scripting Bash", "Python"],
+    "linkedin": "https://www.linkedin.com/in/bob-martin",
+    "github": "https://github.com/bob-martin"
+  },
+  {
+    "id": 3,
+    "name": "Carla Rodriguez",
+    "specialty": "Développement Mobile",
+    "avatar": "https://placehold.co/400x400/EFEFEF/333?text=CR",
+    "bio": "Développeuse mobile créative, Carla maîtrise Swift et Kotlin pour construire des expériences utilisateur fluides sur iOS et Android. Elle s'intéresse particulièrement à l'UX/UI design.",
+    "skills": ["Swift (iOS)", "Kotlin (Android)", "Flutter", "UI/UX Design", "Firebase"],
+    "linkedin": "https://www.linkedin.com/in/carla-rodriguez",
+    "github": "https://github.com/carla-rodriguez"
+  },
+  {
+    "id": 4,
+    "name": "David Petit",
+    "specialty": "Data Science & Big Data",
+    "avatar": "https://placehold.co/400x400/EFEFEF/333?text=DP",
+    "bio": "David transforme les données brutes en informations précieuses. Avec une expertise en R, Python et des technologies Big Data comme Spark, il aime résoudre des problèmes complexes grâce aux données.",
+    "skills": ["Python", "R", "SQL", "Apache Spark", "Tableau"],
+    "linkedin": "https://www.linkedin.com/in/david-petit",
+    "github": "https://github.com/david-petit"
+  }
+]
