@@ -1,27 +1,15 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-size: 1.1rem; /* Increased base font size */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.text-muted {
+  color: #6c757d !important; /* Clearer muted text */
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -35,12 +23,6 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 /* Added for profile card animation */
 .profile-avatar {
   transition: transform 0.2s ease-in-out;
@@ -48,8 +30,4 @@ a {
 
 .profile-avatar:hover {
   transform: scale(1.05);
-}
-
-.header-subtitle {
-  color: white;
 }

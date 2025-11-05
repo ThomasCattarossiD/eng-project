@@ -17,6 +17,18 @@ function calculateAge(dob) {
   return age;
 }
 
+// Helper function to get flag emoji from nationality
+function getFlagEmoji(nationality) {
+    const flags = {
+        'French': '🇫🇷',
+        'American': '🇺🇸',
+        'Spanish': '🇪🇸',
+        'Canadian': '🇨🇦',
+        // Add more mappings as needed
+    };
+    return flags[nationality] || '';
+}
+
 export default function StudentProfile() {
   const { id } = useParams();
   const student = students.find((s) => s.id === parseInt(id));
@@ -34,48 +46,48 @@ export default function StudentProfile() {
   }
 
   const age = calculateAge(student.dob);
+  const formattedDob = new Date(student.dob).toLocaleDateString('en-US', {
+    year: 'numeric', month: 'long', day: 'numeric' 
+  });
 
   return (
     <Container className="py-5">
       <Link href="/" passHref className="mb-4 d-inline-block">
         <Button variant="outline-secondary">← Back to Class List</Button>
       </Link>
-      <Row className="g-4">
-        <Col md={4} className="text-center">
-          <Image src={student.avatar} roundedCircle fluid className="shadow-sm mb-3" />
-          <h2 className="fw-bold">{student.name}</h2>
-          <p className="text-muted">{age} years old</p>
-          <p className="text-muted">{student.nationality}</p>
-        </Col>
-        <Col md={8}>
-          <Card className="shadow-sm mb-4">
-            <Card.Header as="h3">Coding Profile</Card.Header>
-            <ListGroup variant="flush">
-              <ListGroup.Item>
-                <h6 className="fw-bold">Strengths:</h6>
-                <p>{student.codingStrengths}</p>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <h6 className="fw-bold">Weaknesses:</h6>
-                <p>{student.codingWeaknesses}</p>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <h6 className="fw-bold">Biggest Achievement:</h6>
-                <p>{student.biggestAchievement}</p>
-              </ListGroup.Item>
-            </ListGroup>
-          </Card>
+      <Card className="shadow-sm">
+        <Card.Body>
+          <Row className="g-4">
+            <Col md={4} className="text-center border-end">
+              <Image src={student.avatar} roundedCircle fluid className="shadow-sm mb-3" style={{width: '150px', height: '150px'}} />
+              <h2 className="fw-bold h3">{student.name}</h2>
+              <p className="text-muted mb-1">{age} years old</p>
+              <p className="text-muted mb-1">Born on {formattedDob}</p>
+              <p className="text-muted">{getFlagEmoji(student.nationality)} {student.nationality}</p>
+            </Col>
+            <Col md={8}> 
+              <h4 className="fw-bold">Coding Profile</h4>
+              <ListGroup variant="flush" className="mb-4">
+                <ListGroup.Item>
+                  <h6 className="fw-bold">Strengths:</h6>
+                  <p className="mb-0">{student.codingStrengths}</p>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <h6 className="fw-bold">Weaknesses:</h6>
+                  <p className="mb-0">{student.codingWeaknesses}</p>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <h6 className="fw-bold">Biggest Achievement:</h6>
+                  <p className="mb-0">{student.biggestAchievement}</p>
+                </ListGroup.Item>
+              </ListGroup>
 
-          <Card className="shadow-sm">
-            <Card.Header as="h3">Fun Fact</Card.Header>
-            <Card.Body>
-              <Card.Text>
-                {student.funFact}
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+              <h4 className="fw-bold">Fun Fact</h4>
+              <p>{student.funFact}</p>
+            </Col>
+          </Row>
+        </Card.Body>
+      </Card>
     </Container>
   );
 }
