@@ -1,11 +1,10 @@
-
 [
   {
     "id": 1,
     "name": "Alice Dupont",
-    "specialty": "Développement Web & IA",
+    "specialty": "Web Development & AI",
     "avatar": "https://placehold.co/400x400/EFEFEF/333?text=AD",
-    "bio": "Passionnée par l'intelligence artificielle et le développement web, Alice cherche à créer des applications innovantes et intuitives. Elle a une solide expérience en React et en Python.",
+    "bio": "Passionate about artificial intelligence and web development, Alice seeks to create innovative and intuitive applications. She has solid experience in React and Python.",
     "skills": ["React", "Next.js", "Python", "Machine Learning", "Node.js"],
     "linkedin": "https://www.linkedin.com/in/alice-dupont",
     "github": "https://github.com/alice-dupont"
@@ -13,19 +12,19 @@
   {
     "id": 2,
     "name": "Bob Martin",
-    "specialty": "Cybersécurité & Réseaux",
+    "specialty": "Cybersecurity & Networks",
     "avatar": "https://placehold.co/400x400/EFEFEF/333?text=BM",
-    "bio": "Expert en sécurité des systèmes d'information, Bob est spécialisé dans la protection des données et l'analyse des menaces. Il aime concevoir des architectures réseau robustes et sécurisées.",
-    "skills": ["Pentesting", "Firewall", "VPN", "Scripting Bash", "Python"],
+    "bio": "An expert in information systems security, Bob specializes in data protection and threat analysis. He enjoys designing robust and secure network architectures.",
+    "skills": ["Pentesting", "Firewall", "VPN", "Bash Scripting", "Python"],
     "linkedin": "https://www.linkedin.com/in/bob-martin",
     "github": "https://github.com/bob-martin"
   },
   {
     "id": 3,
     "name": "Carla Rodriguez",
-    "specialty": "Développement Mobile",
+    "specialty": "Mobile Development",
     "avatar": "https://placehold.co/400x400/EFEFEF/333?text=CR",
-    "bio": "Développeuse mobile créative, Carla maîtrise Swift et Kotlin pour construire des expériences utilisateur fluides sur iOS et Android. Elle s'intéresse particulièrement à l'UX/UI design.",
+    "bio": "A creative mobile developer, Carla masters Swift and Kotlin to build fluid user experiences on iOS and Android. She is particularly interested in UX/UI design.",
     "skills": ["Swift (iOS)", "Kotlin (Android)", "Flutter", "UI/UX Design", "Firebase"],
     "linkedin": "https://www.linkedin.com/in/carla-rodriguez",
     "github": "https://github.com/carla-rodriguez"
@@ -35,7 +34,7 @@
     "name": "David Petit",
     "specialty": "Data Science & Big Data",
     "avatar": "https://placehold.co/400x400/EFEFEF/333?text=DP",
-    "bio": "David transforme les données brutes en informations précieuses. Avec une expertise en R, Python et des technologies Big Data comme Spark, il aime résoudre des problèmes complexes grâce aux données.",
+    "bio": "David transforms raw data into valuable insights. With expertise in R, Python, and Big Data technologies like Spark, he enjoys solving complex problems through data.",
     "skills": ["Python", "R", "SQL", "Apache Spark", "Tableau"],
     "linkedin": "https://www.linkedin.com/in/david-petit",
     "github": "https://github.com/david-petit"

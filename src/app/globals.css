@@ -40,3 +40,12 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Added for profile card animation */
+.profile-avatar {
+  transition: transform 0.2s ease-in-out;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.05);
+}

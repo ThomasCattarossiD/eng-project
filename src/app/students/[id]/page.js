@@ -12,10 +12,10 @@ export default function StudentProfile() {
   if (!student) {
     return (
       <Container className="text-center py-5">
-        <h2>Étudiant non trouvé</h2>
-        <p>L'étudiant que vous cherchez n'existe pas.</p>
+        <h2>Student Not Found</h2>
+        <p>The student you are looking for does not exist.</p>
         <Link href="/" passHref>
-          <Button variant="primary">Retour à l'accueil</Button>
+          <Button variant="primary">Back to Home</Button>
         </Link>
       </Container>
     );
@@ -36,7 +36,7 @@ export default function StudentProfile() {
         <Col md={8}>
           <Card className="shadow-sm">
             <Card.Body>
-              <Card.Title as="h3">À propos</Card.Title>
+              <Card.Title as="h3">About</Card.Title>
               <Card.Text>
                 {student.bio}
               </Card.Text>
@@ -45,7 +45,7 @@ export default function StudentProfile() {
 
           <Card className="mt-4 shadow-sm">
             <Card.Body>
-              <Card.Title as="h3">Compétences</Card.Title>
+              <Card.Title as="h3">Skills</Card.Title>
               <div>
                 {student.skills.map((skill, index) => (
                   <Badge pill bg="primary" className="me-2 mb-2 p-2 fw-normal" key={index}>
