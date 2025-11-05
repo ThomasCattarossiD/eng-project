@@ -1,46 +1,46 @@
 [
   {
-    "id": 1,
-    "name": "Alice Dupont",
-    "dob": "1999-08-15",
-    "nationality": "French",
-    "avatar": "/photos/1.png",
-    "codingStrengths": "Frontend architecture, UI animations",
-    "codingWeaknesses": "Database optimization",
-    "biggestAchievement": "Led the development of a real-time collaborative editor that is now used by 10,000+ users.",
-    "funFact": "Can solve a Rubik's Cube in under a minute."
-  },
-  {
-    "id": 2,
-    "name": "Bob Martin",
-    "dob": "1998-05-20",
-    "nationality": "American",
-    "avatar": "/photos/2.png",
-    "codingStrengths": "Network security, Penetration testing",
-    "codingWeaknesses": "Frontend design",
-    "biggestAchievement": "Discovered and reported a critical vulnerability in a major open-source library.",
-    "funFact": "Is a certified scuba diver and has explored shipwrecks."
-  },
-  {
-    "id": 3,
-    "name": "Carla Rodriguez",
-    "dob": "2000-11-02",
-    "nationality": "Spanish",
-    "avatar": "/photos/3.png",
-    "codingStrengths": "Native mobile UI/UX, Performance tuning",
-    "codingWeaknesses": "Backend API design",
-    "biggestAchievement": "Built a mobile app that reached #1 in its category on the App Store for a week.",
-    "funFact": "Has a collection of over 50 vintage board games."
-  },
-  {
-    "id": 4,
-    "name": "David Petit",
-    "dob": "1999-01-30",
-    "nationality": "Canadian",
-    "avatar": "/photos/4.png",
-    "codingStrengths": "Data modeling, Predictive analytics",
-    "codingWeaknesses": "CSS and styling",
-    "biggestAchievement": "Developed a machine learning model that improved sales forecasts by 25%.",
-    "funFact": "Plays the violin in a local orchestra."
-  }
+  "id": 1,
+  "name": "Badre EL MOURABIT",
+  "dob": "2004-09-07",
+  "nationality": "French",
+  "avatar": "/photos/1.png",
+  "codingStrengths": "React Native, Next.js, UX/UI Design, Spring Boot",
+  "codingWeaknesses": "Cobol, Kubernetes, C",
+  "biggestAchievement": "Made a cross-platform mobile app for sport and nutrition called HealthyCore.",
+  "funFact": "Chases summits and sunrises !"
+},
+{
+  "id": 18,
+  "name": "Thomas CATTAROSSI DARTIGUELONGUE",
+  "dob": "2004-05-08",
+  "nationality": "French",
+  "avatar": "/photos/18.png",
+  "codingStrengths": "Python (API/Backend), Next.js / Vue.js, Scrum / Agile",
+  "codingWeaknesses": "C#, Database management, Windev/Webdev",
+  "biggestAchievement": "Made a fully fledged and complete chess tournament simulator on Python",
+  "funFact": "I listen to a ton of music everyday"
+},
+{
+  "id": 21,
+  "name": "Ahmed DAHDOUH",
+  "dob": "1998-03-16",
+  "nationality": "Algerian",
+  "avatar": "/photos/21.png",
+  "codingStrengths": "Full Stack Development, Artificial Intelligence, FastAPI, Python, PostgreSQL, Software Architecture",
+  "codingWeaknesses": "Frontend design and advanced CSS styling",
+  "biggestAchievement": "Developed a voice recognition system with 98% accuracy",
+  "funFact": "Sports enthusiast and music lover"
+},
+{
+  "id": 10,
+  "name": "Nicolas ROBLES",
+  "dob": "2003-07-23",
+  "nationality": "France",
+  "avatar": "/photos/10.png",
+  "codingStrengths": "React, Node.js , php , Kubernetes , Docker , Flask",
+  "codingWeaknesses": "CSS , TypeScript",
+  "biggestAchievement": "Created a mobile app called HealthyCore, focused on fitness and nutrition.",
+  "funFact": "Practice scuba diving and have earned several diving certifications."
+}
 ]
