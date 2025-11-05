@@ -37,6 +37,9 @@ export default function StudentProfile() {
 
   return (
     <Container className="py-5">
+      <Link href="/" passHref className="mb-4 d-inline-block">
+        <Button variant="outline-secondary">← Back to Class List</Button>
+      </Link>
       <Row className="g-4">
         <Col md={4} className="text-center">
           <Image src={student.avatar} roundedCircle fluid className="shadow-sm mb-3" />
